@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="indes.css" />
+    <script
+      src="https://kit.fontawesome.com/dd71748849.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="todoPage">
+      <div class="container1">
+        <div class="thead">
+          <span class="back">
+            <div class="back" onclick="addListPage()">
+              <div class="back-logo-circle">
+                <div class="arrow">
+                  <div class="a1"></div>
+                  <div class="a2"></div>
+                  <div class="a3"></div>
+                </div>
+              </div>
+              <div class="bText">Back</div>
+            </div></span
+          >
+          <span class="trip-name"></span>
+        </div>
+        <div class="title lTitle">
+          <p>
+            <span style="font-weight: 900">Tasks</span
+            ><span style="font-weight: 200">Lists</span>
+          </p>
+        </div>
+        <div class="title rTitle">
+          <div class="add add-logo" onclick="addList()">
+            <div class="circle"></div>
+            <div class="plus">
+              <div class="ver"></div>
+              <div class="hor"></div>
+            </div>
+          </div>
+          <div class="add add-text" onclick="addList()">
+            <span><b>Add List</b></span>
+          </div>
+        </div>
+      </div>
+      <div class="container2">
+        <p id="wel">No Items In The Todo Lists!!</p>
+      </div>
+    </div>
+    <div class="new-list">
+      <form action="">
+        <label for="new">Add New List</label><br />
+        <input class="input-list" type="text" name="new" id="newlist" /><br />
+        <div class="buttons">
+          <input class="btn btn1" type="button" value="ADD" onclick="addListBtn()"/>
+          <input class="btn" type="button" value="Close" onclick="closeListBtn()" />
+        </div>
+      </form>
+    </div>
+    <div class="new-task">
+      <form action="">
+        <label for="new">Add New Task</label><br />
+        <input class="input-list" type="text" name="new" id="newtask" /><br />
+        <div class="buttons">
+          <input class="btn btn1" type="button" value="ADD" onclick="addTaskBtn()"  />
+          <input class="btn" type="button" value="Close" onclick="closeTaskBtn()"/>
+        </div>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
